@@ -1,0 +1,267 @@
+/*  ################################################################
+
+	File Name: responsive.css
+	Template Name: Silent HTML5 Template
+	Created By: Enver AVCIOÐLU
+	http://themeforest.net/user/EhanTechnology
+	
+	1) TYPOGRAPHY RESPONSIVE
+	2) NAVBAR & TOPMENU RESPONSIVE
+	3) LAYOUT & OTHER RESPONSIVE
+
+################################################################# */ 
+
+/**********************************************************************
+** TYPOGRAPHY
+**********************************************************************/
+
+@media only screen and (max-width: 1000px) {
+	/* Portfolio Begins */
+	
+	/* Portfolio Item Title */
+	.galleryPlus h4 {
+		font-size:0px;
+	}
+	/* Portfolio Item Title Hover */
+	.galleryPlus:hover h4 {
+		font-size:13px;
+	}
+	
+	/* Portfolio Item Icon */
+	.galleryPlus i {
+		font-size:0px;
+	}
+	/* Portfolio Item Icon Hover */
+	.galleryPlus:hover i {
+		margin-top:20%;
+		font-size:30px;
+	}
+	/* Portfolio Ends */
+
+	/* Twitter Slider Begins */
+	.twitterNotification {
+		font-size:12px;
+	}
+	/* Twitter Slider Ends */
+}
+
+@media only screen and (min-width: 1000px) {
+
+	/* Portfolio Item Title on PC */
+	.galleryPlus h4 {
+		font-size:0px;
+	}
+	/* Portfolio Item Title Hover on PC */
+	.galleryPlus:hover h4 {
+		font-size:25px;
+	}
+	/* Portfolio Item Icon on PC */
+	.galleryPlus i {
+		font-size:0px;
+	}
+	/* Portfolio Item Icon Hover on PC */
+	.galleryPlus:hover i {
+		margin-top:20%;
+		font-size:60px;
+	}
+
+	/* Twitter Slider Begins */
+	.twitterNotification {
+		font-size:20px;
+	}
+	/* Twitter Slider Ends */
+	
+	/* Slider Background Begins */
+	ul.bxslider li {
+		z-index:-1;
+		position:relative;
+	}
+	ul.bxslider li:before {
+		z-index:0;
+		position:absolute;
+		width:100%;
+		height:100%;
+		left:0px;
+		opacity:0.7;
+		background:#000;
+		content: "";
+	}
+	/* Slider Background Ends */
+}
+
+
+
+/**********************************************************************
+** NAVBAR & TOPMENU RESPONSIVE
+**********************************************************************/
+@media only screen and (max-width: 1000px) {
+
+	/* Top Menu Begins */
+	#topMenu {
+		display:none;
+		height:80px;
+	}
+	/* Top Menu Ends */
+	
+	/* Navbar Begins */
+	.navbar {
+		position:fixed;
+		top:0px;
+		width:50%;
+		z-index:2;
+		height:100px !important;
+	}
+
+	/* Change Background Opacity Image while scrolling the window */
+	.scrollBottom.navbar:before {
+			position:absolute;
+			z-index:-1;
+			width:100%;
+			height:100%;
+			background:#d57d00;
+			opacity:1 !important;
+	}
+	/* Navbar Ends */
+
+	/* Logo Begins */
+	/* Logo IMG Sizes */
+	.silentLogo img {
+		height:54px !important;
+		z-index:5;
+	}
+	.silentLogo {
+		padding:20px;
+		position:absolute;
+		z-index:1;
+		border-top:none;
+	}
+	/* Logo Ends */
+}
+
+@media only screen and (min-width: 1000px) {
+	/* Mobile Menu Hide on PC */
+	.slicknav_menu {
+		display:none;
+	}
+	/* LOGO CLASSS */
+	.scrollTop .silentLogo {
+		padding:20px;
+		position:absolute;
+		z-index:1;
+		border-top:none;
+	}
+	.scrollBottom .silentLogo {
+		padding:5px;
+		position:absolute;
+		z-index:1;
+		border-top:none;
+	}
+}
+
+
+
+
+
+/**********************************************************************
+** LAYOUT RESPONSIVE
+**********************************************************************/
+@media only screen and (max-width: 1000px) {
+	/* Features (Text)) Begins */
+	.features {
+		background:url(../img/features.jpg) center center;
+	}
+	/* Features (Text)) Ends */
+
+	/* Portfolio Begins */
+	.galleryPlus {
+		height:100%;
+		position:absolute;
+		width:100%;
+	}
+	.galleryPlus:hover {
+		width:100%;
+		height:100%;
+		position:absolute;
+		color:#FFF;
+		background:rgba(0, 0, 0, .7);
+		text-align:center;
+		border:3px #FFF dotted;
+	}	
+	div.portfolioItem a div img {
+		width:100%;
+	}
+	/* Portfolio Ends */
+
+	/* Slider Begins */
+	.slider {
+		margin-bottom:-80px;
+	}
+	
+	/* Slider Pagination: This hides slider pagination pager dot */
+	.bx-pager {
+		display:none !important;
+	}
+
+	/* You can hide a html element with use this css class */
+	.deleteMobile {
+		display:none;
+	}
+	/* Slider Ends */
+}
+
+@media only screen and (min-width: 1000px) {	
+	
+	/* You can hide a html element with use this class */
+	.deletePC {
+		display:none !important;
+	}
+
+	/* Slider Begins */
+	.slider {
+		margin-bottom:-62px;
+	}
+	/* Slider Ends */
+
+	/* Slider Pager Begins */
+	.bx-pager {
+		display:block !important;
+	}
+	/* Slider Pager Ends */
+
+	/* Portfolio Begins */
+	.galleryPlus {
+		height:100%;
+		position:absolute;
+		width:100%;
+	}
+
+	.galleryPlus:hover {
+		width:100%;
+		height:100%;
+		position:absolute;
+		color:#FFF;
+		background:rgba(0, 0, 0, .7);
+		text-align:center;
+		border:3px #FFF dotted;
+	}
+	div.portfolioItem a div img {
+		width:100%;
+	}
+	/* Portfolio Ends */
+
+	/* Features (Text) */
+	.features {
+		background:url(../img/features.jpg) center center;
+		background-size:100%;
+	}
+
+	/* Menu Skew Effect for only PC */
+	.cevir {
+		transform:skew(10deg,0);
+	}
+
+}
+
+/**********************************************************************
+** End of the File!
+**********************************************************************/

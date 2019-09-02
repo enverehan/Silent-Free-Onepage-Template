@@ -1,0 +1,1326 @@
+/*  ################################################################
+
+	File Name: still.css
+	Template Name: Silent HTML5 Template
+	Created By: Enver AVCIOĞLU
+	http://themeforest.net/user/EhanTechnology
+	
+	1) TYPOGRAPHY
+		-- General Structure
+		-- Form Typography
+		-- Navbar Typography
+		-- Text Selection Color
+	2) PADDING
+	3) TRANSITION
+	4) PRE LOADING
+	5) SLIDER STYLES
+	6) CAROUSEL SLIDERS
+	7) FORM
+		-- Form Structure
+		-- Form Buttons
+	8) TEMPLATE NAVBAR
+	9) TOP MENU
+		-- Normal Menu
+		-- Responsive Mobil Menu
+	10) TEAM
+	11) LAYER AREAS
+	12) BLOG
+		-- Tags
+		-- Recent Posts
+		-- Blog Categories
+		-- Blog Post Comment
+		-- Home Page Blog Content
+	13) FOOTER
+	14) GENERAL STRUCTURE
+		
+
+################################################################# */ 
+
+/*######################################################################################
+#####
+##### TYPOGRAPHY
+#####
+######################################################################################*/
+html,
+body {
+	font-family:Raleway;
+}
+
+/* Link font decoration */
+a {
+	text-decoration:none;
+}
+a:link {
+	text-decoration:none;
+}
+
+/* H Tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding:0px;
+	margin:0px;
+}
+
+h1 {
+	font-size:35px;
+}
+h2 {
+	font-size:27px;
+}
+h3 {
+	font-size:22px;
+}
+h4 {
+	font-size:16px;
+}
+h5 {
+	font-size:12px;
+}
+h6 {
+	font-size:8px;
+}
+p {
+	margin-top:20px;
+	line-height:30px;
+}
+
+/* Blog Post Title H! */
+h1.postTitle {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/* Theme Color */
+.color {
+	color:#d57d00;
+}
+
+/* Text Align */
+.tar {
+	text-align:right;
+}
+.tal {
+	text-align:left;
+}
+.tac {
+	text-align:center;
+}
+
+/* Standart Features */
+/* Title */
+div.features h3 {
+	font-size:20px;
+	text-align:center;
+	margin-bottom:20px;
+	margin-top:10px;
+	text-transform: capitalize;
+}
+
+/* Standart Features Description */
+div.features div div div div div div div {
+	text-align:center;
+}
+
+/* Silent Slider Features */
+ul.textSliderSilent {
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+
+/* Features Slider Text */
+div.sliderFeatures div div div {
+	text-align:center;
+}
+
+/* Features Slider Title */
+div#sliderFeatures div div div h3 {
+	font-size:25px;
+	margin-top:15px;
+}
+
+/* Slider Title */
+ul.bxslider li h1 {
+	position:absolute;
+	top:15%;
+	color:#FFF;
+	width:100%;
+	padding:10px;
+	font-size:35px;
+	text-align:center;
+	letter-spacing:0px;
+	text-transform:uppercase;
+	font-family: 'Raleway';
+	font-weight:bold;
+}
+
+/* Slider Description */
+ul.bxslider li div {
+	color:#FFF;
+	font-size:18px;
+	text-align:center;
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:-30px;
+	margin-bottom:10px;
+	position:absolute;
+	top:30%;
+	letter-spacing:10px;
+	line-height:23px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+/* Slider Button */
+
+/* Our Work History */
+h1.title {
+	font-size:40px;
+	color:#d57d00;
+	font-family: 'Anton', sans-serif;
+	text-align:center;
+	margin:30px;
+}
+/* Work History Text */
+div#workHistory div div div {
+	font-size:15px;
+	text-align:center;
+	line-height:25px;
+}
+/* Work History Big Title */
+div#workHistory div div div div div h2 {
+	font-size:30px;
+	text-align:center;
+	margin-top:10px;
+}
+/* Work History Small title */
+div#workHistory div div div div div h4 {
+	font-size:14px;
+	text-align:center;
+	margin-top:10px;
+	line-height:20px;
+	letter-spacing:1.5px;
+}
+
+/* Social Icons Web Font Typograpy */
+.teamSocialIcons {
+	color:#FFF;
+	width:100%;
+	background:#d57d00;
+	padding:10%;
+	margin-top:20px;
+	text-align:center;
+}
+.teamSocialIcons a {
+	color:#FFF;
+}
+.socialIcons {
+	margin-top:-10px;
+	margin-bottom:30px;
+}
+.socialIcons a {
+	color:#FFF;
+	font-size:20px;
+}
+.TsocialIcons a {
+	color:#d57d00;
+}
+
+/* Team Info */
+.teamInfo h3 {
+	font-family: 'Exo';
+	margin-bottom: 5px;
+	margin-top:10px;
+}
+.teamInfo h4 {
+	font-family: 'Exo';
+	margin-bottom:5px;
+}
+.teamInfo div {
+	margin-bottom:5px;
+}
+
+/* Twitter Notification Typograpy */
+.twitterNotification a {
+	color:#d57d00;
+}
+.twitterClock {
+	color:#CCC;
+	font-size:14px;
+}
+.twitterUsername {
+	color:#d57d00;
+	font-size:15px;
+}
+
+/* Blog */
+h2.homeBlogTitle {
+	margin:0px;
+	font-size:24px;
+	padding-bottom:10px;
+	color:#d57d00;
+	font-weight:bold;
+	margin-top:-10px;
+}
+
+/* Portfolio */
+div.portfolio { 
+	text-align:center;
+}
+div.portfolio span {
+	padding:5px;
+	margin:5px; !important;
+	border:solid thin #d57d00;
+	text-decoration:none;
+	cursor:pointer;
+}
+div.portfolio span:hover {
+	background:#d57d00;
+	color:#FFF;
+}
+
+/* Menu Typography */
+/* Normal Menu */
+ul.menuItem {
+	list-style-type:none;
+	font-family: 'Exo', sans-serif;
+	text-transform: uppercase;
+	font-size:12px;
+}
+/* Top Menu Item Font */
+.scrollTop ul.menuItem > li > a > i {
+	font-size:30px;
+	text-align:center !important;
+}
+.scrollBottom ul.menuItem > li > a > i {
+	font-size:15px;
+	text-align:center !important;
+}
+
+ul.menuItem > li {
+	text-align:center !important;
+}
+
+/* Text Selection Color */
+::-moz-selection {
+	background:#d57d00 !important; 
+	color:#fff; 
+}
+::selection { 
+	background:#d57d00 !important; 
+	color:#fff; 
+}
+
+/*######################################################################################
+#####
+##### Padding Classes
+#####
+######################################################################################*/
+.p0m0 { 
+	padding:0px !important;
+	margin:0px !important;
+}
+.p5 {
+	padding:5px;
+}
+.p10 {
+	padding:10px;
+}
+.p20 {
+	padding:20px;
+}
+.p30 {
+	padding:30px;
+}
+.p40 {
+	padding:40px;
+}
+.p50 {
+	padding:50px;
+}
+.m10 {
+	margin:10px;
+}
+
+/* Clear */
+.clear {
+	clear:both;
+}
+
+/*######################################################################################
+#####
+##### Transition
+#####
+######################################################################################*/
+.transition {
+	-webkit-transition: all 0.5s ease-out; 
+	-o-transition: all 0.5s ease-out; 
+	-moz-transition: all 0.5s ease-out; 
+	-ms-transition: all 0.5s ease-out;
+	-kthtml-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.transition:hover  {
+	-webkit-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-kthtml-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+/*######################################################################################
+#####
+##### PRE LOADING
+#####
+######################################################################################*/
+html,
+body,#preloader{
+	height:100%;
+}
+html,body,#preloader{
+	height:100%;
+}
+body {
+	overflow-x:hidden;
+}
+body > #preloader{
+	height:auto;
+	min-height:100%;
+}
+#preloader{
+	filter:alpha(opacity=90);
+	position:absolute;
+	left:0px;
+	background:#FFF;
+	top:0px;
+	width:100%;
+	height:100%;
+	line-height:600px;
+	color:#fff;
+	text-align:center;
+	position:fixed;
+	z-index:999999;
+}
+#loading_prog{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:500px;
+	height:100px;
+	line-height:100px;
+	margin-left:-250px;
+	margin-top:-50px;
+	text-align:center;
+}
+
+/*######################################################################################
+#####
+##### SLIDER STYLES
+#####
+######################################################################################*/
+.sliderButton {
+	padding:20px;
+	border:1px solid #FFF;
+	width:auto;
+	margin-top:100px;
+	letter-spacing:2px;
+	color:#FFF;
+}
+.sliderButton:hover {
+	background:#FFF;
+	color:#d57d00;
+}
+ul.bxslider {
+	position:relative;
+	margin:0px;
+	padding:0px;
+}
+ul.bxslider li img {
+	width:100%;
+}
+.abs {
+	position:absolute;
+}
+.rlt {
+	position:relative;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background:#d57d00 !important; 
+	bottom:50% !important;
+}
+
+
+/*######################################################################################
+#####
+##### Carousel Sliders
+#####
+######################################################################################*/
+/* Slogan Slider */
+#sloganSlider .owl-controls .owl-pagination span { 
+	background:#d57d00;
+	width:20px;
+	height:20px;
+}
+/* Twitter Notification*/
+#messageSlider .owl-controls .owl-pagination  span {
+	background:#d57d00;
+	width:20px;
+	height:20px;
+	margin-top:-60px;
+}
+/* Company Slider */
+#owl-example .owl-controls .owl-pagination  span {
+	background:#FFF;
+	width:20px;
+	height:20px;
+	margin-top:0px;
+}
+/* Team Slider */
+#teamSlider .owl-controls .owl-pagination  span {
+	background:#d57d00;
+	width:20px;
+	height:20px;
+	margin-top:0px;}
+
+/*######################################################################################
+#####
+##### FORMS
+#####
+######################################################################################*/
+
+/** Form Areas **/
+.formBorder {
+	border:solid #EAEAEA 1px;
+}
+.formCommentArea {
+	width:99%;
+	height:150px;
+	border:none;
+}
+
+/* Homepage Form */
+div#siteSearchAreaMobile2 {
+	top:50px;
+}
+.msform {
+	position:relative;
+	padding:10px;
+}
+.msinput {
+	text-align:center;
+	width:100%;
+	padding:10px;
+	color:#d57d00;
+}
+.sform {
+	position:relative;
+	padding:10px;
+}
+.sinput {
+	text-align:center;
+	width:100%;
+	padding:10px;
+	color:#d57d00;
+}
+.contactHomeInput {
+	width:100%;
+	padding:20px;
+	border-radius:20px;
+	border:1px dotted #d57d00;
+	margin-bottom:10px;
+}
+.contactHomeTextarea {
+	width:100%;
+	padding:20px;
+	border-radius:20px;
+	border:1px dotted #d57d00;
+	margin-bottom:10px;
+}
+.scrollTop #siteSearchArea {
+	position:absolute;
+	top:100px;
+	left:0px;
+	width:100%;
+	background:#d57d00;
+	border-top:2px dotted #FFF;
+	border-bottom:2px dotted #FFF;
+}
+.scrollBottom #siteSearchArea {
+	position:absolute;
+	top:75px;
+	left:0px;
+	width:100%;
+	border-top:2px dotted #FFF;
+	border-bottom:2px dotted #FFF;	
+}
+
+.siteSearchInput {
+	width:98%;
+	margin-top:25px;
+	margin-bottom:25px;
+	padding:10px;
+	margin-left:-10px;
+}
+
+/* Blog search */
+.searchBlog {
+	position:relative;
+}
+.searchBlogButton {
+	position:absolute;
+	right:0px;
+	top:0px;
+	background:#d57d00;
+	border:none;
+	color:#FFF;
+	padding:22px;
+}
+.blogsinput {
+	width:100%;
+}
+
+/* Blog comment form inputs */
+.blogCommentFormInput {
+	padding:2%;
+	width:96%;
+	margin-bottom:10px;
+}
+
+/* Form Buttons */
+.msbutton {
+	position:absolute;
+	top:12px;
+	right:10px;
+	padding:10px;
+	color:#d57d00;
+	background:#FFF;
+	border:none;
+}
+.sbutton {
+	position:absolute;
+	top:12px;
+	right:10px;
+	padding:10px;
+	color:#d57d00;
+	background:#FFF;
+	border:none;
+}
+.commentSendButton {
+	background:#EAEAEA;
+	border:none;
+	color:#333;
+	left:0px;
+	bottom:0px;
+	position:absolute;
+}
+.okayButton {
+	background:#33CC00;
+	border:solid 1px #33CC00;
+	color:#FFF;
+	border-radius:5px;
+}
+.okayButton:hover {
+	background:#FFF;
+	color:#33CC00;
+	border-radius:5px;
+}
+.cancelButton {
+	background:#990000;
+	border:solid 1px #990000;
+	color:#FFF;
+	border-radius:5px;
+}
+.cancelButton:hover {
+	background:#FFF;
+	color:#990000;
+	border-radius:5px;
+}
+.contactHomeButton {
+	padding:20px;
+	border:0px;
+	width:100%;
+	background:#FFF;
+	border-radius:20px;
+	border:1px dotted #d57d00;
+}
+.contactHomeButton:hover {
+	background:#d57d00;
+	color:#FFF;
+}
+
+
+/*######################################################################################
+#####
+##### Template NAVBAR CSS
+#####
+######################################################################################*/
+/* NAVBAR BEGINS */
+/* If scroll is at top */
+.navbar {	
+	border:none;
+}
+nav#NavBar.scrollTop div div div img {
+	height:56px;
+	-webkit-transition: all 0.5s ease-out; 
+	-o-transition: all 0.5s ease-out; 
+	-moz-transition: all 0.5s ease-out; 
+	-ms-transition: all 0.5s ease-out;
+	-kthtml-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+/* If scroll is at bottom */
+nav#NavBar.scrollBottom div div div img {
+	height:60px;
+	-webkit-transition: all 0.5s ease-out; 
+	-o-transition: all 0.5s ease-out; 
+	-moz-transition: all 0.5s ease-out; 
+	-ms-transition: all 0.5s ease-out;
+	-kthtml-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.scrollTop.navbar {
+	border-radius:0px;
+	height:100px;
+}
+.scrollBottom.navbar {
+	border-radius:0px;
+	height:75px;
+}
+
+#mobileMenuClose {
+	display:none;
+}
+#menu {
+	display:none;
+}
+.mobileDeleteSpace {
+	margin-bottom:-60px;
+}
+/* NAVBAR ENDS */
+
+/*#########################################################################################################################
+####	Top Menu BEGINS
+####	!!!!!!!!
+####	NOTICE:
+####	- THIS CONTAINS VERY COMPLEX CODE. IF YOU ARE NOT PROFESSIONAL PLEASE SAVE AS A BACKUP OF THE FILE.
+####	- The purpose of this area, show menu on scroll top and bottom.
+####	- If you are not web designer and do you want to change this area please find a freelancer for this area.
+####
+####	NOTICE 2:
+####    - If you dont find some elements please look to this file typography area and responsive.css typography area. It 
+####    is for your ease!  
+#########################################################################################################################*/
+	/* Normal Menu */
+	ul.menuItem {
+		position:absolute;
+		right:60px;
+		z-index:3;
+	}
+	/* If scroll top */
+	.scrollTop .menuItem li {
+		padding:18px;
+		float:left;
+		height:100px;
+	}
+	/* If scroll bottom */
+	.scrollBottom .menuItem li {
+		padding:15px;
+		float:left;
+		height:75px;
+	}
+	.scrollBottom ul.menuItem li:hover {
+		color:#d57d00;
+		background:#FFF;
+	}
+	.scrollTop ul.menuItem li:hover {
+		color:#d57d00;
+		background:#FFF;
+	}
+	.scrollBottom ul.menuItem li:hover a {
+		color:#d57d00;
+	}
+	.scrollTop ul.menuItem li:hover a {
+		color:#d57d00;
+	}
+	.scrollBottom ul.menuItem li a {
+		text-decoration:none;
+		color:#FFF;
+	}
+	.scrollTop ul.menuItem li a {
+		text-decoration:none;
+		color:#FFF;
+	}
+	.scrollBottom ul.menuItem li {
+		position:relative;
+	}
+	.scrollTop ul.menuItem li {
+		position:relative;
+	}
+	.scrollBottom ul.menuItem li ul {
+		display:none;
+		position:absolute;
+		margin-right:0px !important;
+	}
+	.scrollTop ul.menuItem li ul {
+		display:none;
+		position:absolute;
+		margin-right:0px !important;
+	}
+	.scrollTop ul.menuItem li:hover ul {
+		display:block;
+		width:200px; 
+		background:#FFF; 
+		top:100px; 
+		right:-10px; 
+		list-style-type:none; 
+		padding:0px;
+		margin:0px;
+		margin-right:1px !important;
+		text-align:left;
+	}
+	.scrollBottom  ul.menuItem li:hover ul {
+		display:block;
+		width:200px; 
+		background:#FFF; 
+		top:75px; 
+		right:-10px; 
+		list-style-type:none; 
+		padding:0px;
+		margin:0px;
+		margin-right:1px !important;
+		text-align:left;
+	}
+	.scrollBottom ul.menuItem li ul li { 
+		border-bottom:3px dotted #d57d00; 
+		width:100%; 
+		position:relative;
+		height:auto;
+	}
+	.scrollTop ul.menuItem li ul li { 
+		border-bottom:3px dotted #d57d00; 
+		width:100%; 
+		position:relative;
+		height:auto;
+	}
+	.scrollBottom ul.menuItem li ul li ul { 
+		display:none !important;
+		margin-right:5px !important;
+	}
+	.scrollTop ul.menuItem li ul li ul { 
+		display:none !important;
+		margin-right:5px !important;
+	}
+	.scrollBottom ul.menuItem li ul li:hover ul { 
+		display:block !important; 
+		position:absolute; 
+		right:200px; 
+		top:0px; 
+		border-right:3px solid #d57d00;
+		margin-right:0px !important;
+	}
+	.scrollTop ul.menuItem li ul li:hover ul { 
+		display:block !important; 
+		position:absolute; 
+		right:200px; 
+		top:0px; 
+		border-right:3px solid #d57d00;
+		margin-right:0px !important;
+	}
+	.scrollBottom ul.menuItem li ul li:hover ul li ul {
+		display:none !important;
+		margin-right:-8px !important;
+	}
+	.scrollTop ul.menuItem li ul li:hover ul li ul {
+		display:none !important;
+		margin-right:-8px !important;
+	}
+	.scrollBottom ul.menuItem li ul li ul li:hover ul {
+		display:block !important;
+		margin-right:-8px !important;
+	}
+	.scrollTop ul.menuItem li ul li ul li:hover ul {
+		display:block !important;
+		margin-right:-8px !important;
+	}
+	.scrollBottom ul.menuItem li ul li ul li:hover ul li ul {
+		display:none !important;
+		margin-right:-8px !important;
+	}
+	.scrollTop ul.menuItem li ul li ul li:hover ul li ul {
+		display:none !important;
+		margin-right:-8px !important;
+	}
+	.scrollBottom ul.menuItem li ul li ul li ul li:hover ul {
+		display:block !important; 
+		margin-right:-8px !important;
+	}
+	.scrollTop ul.menuItem li ul li ul li ul li:hover ul {
+		display:block !important; 
+		margin-right:-8px !important;
+	}
+
+	/* Top Menu Item Font */
+	.scrollTop ul.menuItem > li > a > i {
+		width:100%;
+		padding-bottom:10px;
+		-webkit-transition: all 0.5s ease-out; 
+		-o-transition: all 0.5s ease-out; 
+		-moz-transition: all 0.5s ease-out; 
+		-ms-transition: all 0.5s ease-out;
+		-kthtml-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
+	}
+
+	.scrollBottom ul.menuItem > li > a > i {
+		width:100%;
+		padding-bottom:10px;
+		-webkit-transition: all 0.5s ease-out; 
+		-o-transition: all 0.5s ease-out; 
+		-moz-transition: all 0.5s ease-out; 
+		-ms-transition: all 0.5s ease-out;
+		-kthtml-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
+	}
+	
+	.scrollTop.navbar {
+			width:100%; 
+			background:#d57d00; 
+			color:#FFF; 
+			z-index:1; 
+			position:relative;
+	}
+	.scrollBottom.navbar {
+			width:100%; 
+			color:#FFF; 
+			z-index:1; 
+			position:relative;
+	}
+	.scrollBottom.navbar:before {
+			position:absolute;
+			z-index:-1;
+			width:100%;
+			height:100%;
+			background:#d57d00;
+			opacity: 0.6;
+	}
+
+	/* Responsive Mobile Menu */
+	.slicknav_menu { 
+		background:none;
+		padding:0px; 
+		position:absolute; 
+		top:0px;
+		border-radius:5px;
+		margin-top:25px;
+		margin-right:2px;
+		width:auto !important;
+		z-index:2 !important;
+		width:100% !important;
+	}
+	.slicknav_menu ul {
+		margin-top:72px;
+		background:#d57d00;
+		width:100%;
+	}
+	.slicknav_menu ul li {
+		padding:5px;
+	}
+	.slicknav_menu ul li a {
+		letter-spacing:1px;
+		text-transform:uppercase;
+	}
+
+
+/*######################################################################################
+#####
+##### TEAM
+#####
+######################################################################################*/
+/* Team */
+.team {
+	background:#FFF;
+	color:#d57d00;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border:1px solid #d57d00;
+	margin-bottom:20px;
+	background:url(../img/layerBack2.png);
+}
+.team:hover {
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+.teamImg {
+	width:100%;
+}
+.teamImg:hover {
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border:3px #d57d00 dotted;
+}
+.teamInfo {
+	width:100%;
+	background:#FAFAFA;
+	padding:10px;
+}
+
+/*#########################################################################################################################
+####	LAYER AREAS
+#########################################################################################################################*/
+/* Charts */
+.charts {
+	background:url(http://placehold.it/1200x600) center center;
+	background-repeat:no-repeat;
+	position:relative;
+	z-index:0;
+}
+.charts:before {
+	z-index:-1;
+	background:#FFF;
+	width:100%;
+	height:100%;
+	left:0px;
+	opacity:0.9;
+	content: "";
+	position:absolute;
+}
+
+/* Tab */
+#myTab li a {
+	border-radius:none;
+	color: #d57d00;
+}
+
+/* Pagination */
+ul.pagination li a {
+	background: #FFF;
+	color: #d57d00;
+}
+ul.pagination li:hover {
+}
+ul.pagination li:hover a {
+	background:#d57d00;
+	color:#FFF;
+}
+
+/* Contact */
+#contact {
+	background:url(../img/contact.jpg) center center;
+	z-index:0;
+	position:relative;
+}
+#contact:before {
+	z-index:-1;
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0px;
+	background:#FFF;
+	opacity:0.9;
+	content: "";
+}
+
+/* Bar Chart */
+canvas#barChart {
+	width:100%;
+}
+
+.Company {
+	background:url(../img/enter-button.jpg) center !important;
+}
+.countto {
+	background:url(http://placehold.it/1200x600) center center;
+	background-repeat:no-repeat; color:#FFF;
+}
+
+/* Slider IMG */
+div#sliderFeatures div img {
+	width:70%;
+	padding-left:10%;
+	padding-top:70px;
+	padding-bottom:70px;
+	padding-right:10%;
+}
+
+/* Slider Features Background */
+.features {
+	position:relative;
+	text-align:center;
+	z-index:0;
+}
+.features:before {
+	content: '';
+	left:0px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	background:#000;
+	opacity:0.5;
+}
+
+/* Work History Background */
+div#workHistory {
+	z-index:0;
+	position:relative;
+}
+
+div#workHistory:before {
+	content: "";
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	background:#000;
+	opacity:0.8;
+}
+
+/* Twitter Background */
+#messageSlider {
+	background:url(./../img/message/1.jpg) center center fixed;
+	background-position:fixed !important;
+	color:#FFF;
+	z-index:0;
+	position:relative;
+}
+#messageSlider:before {
+	content: "";
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	left:0px;
+	background:#000;
+	opacity:0.4;
+}
+
+/* Company Area */
+.Company {
+	z-index:0;
+	position:relative;
+}
+.Company:before {
+	position:absolute;
+	z-index:-1;
+	content: "";
+	background:#d57d00;
+	width:100%;
+	height:100%;
+	left:0px;
+	opacity:0.6;
+}
+.Company div div div img {
+	width:90%;
+	margin:5%;
+}
+
+/*#########################################################################################################################
+####	BLOG
+#########################################################################################################################*/
+	
+/* Blog CSS */
+/* Tags */
+ul.tags {
+	padding:0px;
+	margin:0px;
+	}
+ul.tags li {
+	border:1px #d57d00 solid;
+	padding:10px;
+	color:#d57d00;
+	margin:1px;
+	float:left;
+	list-style-type:none;
+}
+ul.tags li a {
+	color:#d57d00;
+}
+ul.tags li:hover a {
+	color:#FFF;
+}
+ul.tags li:hover {
+	background:#d57d00;
+	color:#FFF;
+}
+
+/* Blog Style */
+.postContainer div img {
+	width:100%;
+}
+.youtube {
+	width:100%;
+	height:400px;
+	border:none;
+}
+.soundcloud {
+	width:100%;
+	height:195px;
+	border:none;
+}
+
+/* Menu Areas */
+.blogMenuLeftArea {
+	width:30%;
+	float:left;
+}
+.blogMenuLeftArea img {
+	width:100%;
+}
+.blogMenuRightArea {
+	width:70%;
+	float:left;
+}
+
+/* Recent Posts */
+ul.recentPosts {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+ul.recentPosts li {
+	padding:0xp;
+	margin:0px;
+}
+/* Blog Categories */
+ul.blogCategory {
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+ul.blogCategory li i {
+	padding-right:10px;
+}
+ul.blogCategory li a {
+	color:#333;
+}
+ul.blogCategory li a:link {
+	color:#333;
+}
+ul.blogCategory li {
+	padding:10px;
+	border-bottom:1px #EAEAEA solid;
+}
+/* Blog post comment */
+.subcomment1 {
+	margin-left:5%;
+	width:95%;
+}
+.subcomment2 {
+	margin-left:10%;
+	width:90%;
+}
+.subcomment3 {
+	margin-left:15%;
+	width:85%;
+}
+.subcomment4 {
+	margin-left:20%;
+	width:80%;
+}
+.subcomment5 {
+	margin-left:25%;
+	width:75%;
+}
+.subcomment6 {
+	margin-left:30%;
+	width:70%;
+}
+.commentProfilePic {
+	width:80px !important;
+	height:80px !important;
+	margin-right:0px;
+	margin-bottom:20px;
+}
+
+/* Home Page Blog */
+.blogContent {
+	margin:0px;
+	padding-left:10px;
+	margin-right:20px;
+	margin-top:10px;
+}
+/* Blog Image */
+#blog div div img {
+	width:100%;
+	margin-bottom:10px;
+}
+
+
+/*######################################################################################
+#####
+##### FOOTER
+#####
+######################################################################################*/
+.footer {
+	background:#d57d00;
+	margin-top:-5px;
+	color:#FFF;
+}
+
+/* Waypoint effect */
+.os-animation{
+	opacity: 0;
+}
+.os-animation.animated{
+	opacity: 1;
+}
+
+/*######################################################################################
+#####
+##### GENERAL STRUCTURE
+#####
+######################################################################################*/
+
+/* page opening animation with transition + deg30 */
+.deg360 {
+	transform:rotate(360deg);
+}
+
+/* Features Info Item Class */
+.infoPanel { 
+	color:#FFF;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+.infoPanel:hover {
+	background:#d57d00;
+	color:#FFF;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+/* Title Line */
+.titleBorder {
+	background:url(../img/titleBorder.png) center center;
+	background-repeat:no-repeat;
+	width:100%;
+	height:25px;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+
+/* Shadows */
+.shadowMenu {
+	-webkit-box-shadow:0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* For Work History */
+.rhombus {
+	border:1px #FFF solid;
+	padding:10px;
+	width:auto;
+	margin-bottom:25px;
+}
